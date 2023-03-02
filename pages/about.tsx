@@ -1,9 +1,10 @@
 import Footer from '@/components/Footer';
 import SponsorSection from '@/components/SponsorSection';
 import Topbar from '@/components/Topbar';
+import { NextPage } from 'next';
 import React from 'react'
 
-function About() {
+const About: NextPage = () => {
     return (
         <div>
             <Topbar />

@@ -8,7 +8,7 @@ const images = [
     '/assets/podcast/Spotify.svg',
 ]
 
-function PodcastSection() {
+const PodcastSection = (): JSX.Element => {
     return (
         <div className='w-full flex items-center justify-center'>
             <div className='w-full max-w-6xl flex items-center justify-between'>

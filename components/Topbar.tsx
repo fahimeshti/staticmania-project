@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 
-function Topbar() {
+const Topbar = (): JSX.Element => {
     return (
         <div className='w-full h-[72px] flex items-center justify-center'>
             <div className='w-full max-w-6xl flex items-center justify-between'>

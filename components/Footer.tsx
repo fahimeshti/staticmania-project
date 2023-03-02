@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
-function Footer() {
+const Footer = (): JSX.Element => {
     return (
         <div className='bg-[#14142B] text-white'>
             <div className='w-full flex flex-col items-center justify-center'>

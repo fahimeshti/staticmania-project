@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Container({ children }: { children: React.ReactElement }) {
+const Container = ({ children }: { children: React.ReactElement }): JSX.Element => {
     return (
         <div className='w-full flex items-center justify-center'>
             <div className='w-full max-w-5xl flex items-center justify-between'>

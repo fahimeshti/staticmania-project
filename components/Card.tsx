@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
 import React from 'react'
 
-function Card({ image }: { image: StaticImageData }) {
+const Card = ({ image }: { image: StaticImageData }): JSX.Element => {
     return (
         <div className='w-[416px]'>
             <picture className='relative block w-full h-[256px] object-contain'>

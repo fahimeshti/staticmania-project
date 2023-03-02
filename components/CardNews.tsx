@@ -8,7 +8,7 @@ type MyType = {
     text: string;
 }
 
-function CardNews({ image, title, text }: MyType) {
+const CardNews = ({ image, title, text }: MyType): JSX.Element => {
     return (
         <div className='max-w-[416px] h-full flex flex-col items-center justify-between'>
             <picture className='relative block w-full h-[320px]'>

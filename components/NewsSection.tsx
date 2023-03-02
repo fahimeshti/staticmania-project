@@ -17,7 +17,7 @@ const cards = [
         text: 'Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.'
     },
 ]
-function NewsSection() {
+const NewsSection = (): JSX.Element => {
     return (
         <div className='w-full flex items-center justify-center my-24'>
             <div className='w-full max-w-6xl flex flex-row gap-4 items-stretch'>

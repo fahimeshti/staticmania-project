@@ -10,7 +10,7 @@ const images = [
     image3
 ]
 
-function RecentSection() {
+const RecentSection = (): JSX.Element => {
     return (
         <div className='w-full flex items-center justify-center my-24'>
             <div className='w-full max-w-6xl space-y-10'>

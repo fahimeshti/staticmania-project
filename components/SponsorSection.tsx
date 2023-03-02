@@ -1,10 +1,10 @@
-import Image from 'next/image';
 import React from 'react';
+import Image from 'next/image';
+import image from '../public/assets/sponsors/Logo4.svg'
 import image1 from '../public/assets/sponsors/Logo.svg'
 import image2 from '../public/assets/sponsors/Logo1.svg'
 import image3 from '../public/assets/sponsors/Logo2.svg'
 import image4 from '../public/assets/sponsors/Logo3.svg'
-import image from '../public/assets/sponsors/Logo4.svg'
 
 const images = [
     image1,
@@ -13,7 +13,7 @@ const images = [
     image4,
     image
 ]
-function SponsorSection() {
+const SponsorSection = (): JSX.Element => {
     return (
         <div className='w-full flex items-center justify-center mt-20 -mb-28'>
             <div className='w-full max-w-6xl bg-[#503AE7] px-[72px]'>

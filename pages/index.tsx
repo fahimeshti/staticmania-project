@@ -9,10 +9,11 @@ import RecentSection from '@/components/RecentSection'
 import NewsSection from '@/components/NewsSection'
 import SponsorSection from '@/components/SponsorSection'
 import Footer from '@/components/Footer'
+import { NextPage } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
@@ -33,3 +34,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home;
