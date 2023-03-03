@@ -4,10 +4,20 @@ import image1 from '../public/assets/episodes/photo-of-people-sitting-beside-tab
 import image2 from '../public/assets/episodes/man-holding-black-smartphone-1220757.png'
 import image3 from '../public/assets/episodes/photo-of-women-having-conversation-3194524.png'
 
-const images = [
-    image1,
-    image2,
-    image3
+const data = [
+    {
+        img: image1,
+        title: "Ep 1: How to build a world-class business brand"
+    },
+    {
+        img: image2,
+        title: "Ep 2: Getting the first 100 customers for your business"
+    },
+    {
+        img: image3,
+        title: "Ep 3: Should I raise money for my startup, or not?"
+    },
+
 ]
 
 const RecentSection = (): JSX.Element => {
@@ -30,8 +40,12 @@ const RecentSection = (): JSX.Element => {
 
                 <div className='flex items-center gap-4'>
                     {
-                        images.map((image, idx) => (
-                            <Card image={image} key={idx} />
+                        data.map((item, idx) => (
+                            <Card
+                                title={item.title}
+                                image={item.img}
+                                key={idx}
+                            />
                         ))
                     }
                 </div>

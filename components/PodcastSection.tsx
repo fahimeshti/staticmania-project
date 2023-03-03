@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 const images = [
@@ -17,13 +18,15 @@ const PodcastSection = (): JSX.Element => {
                     {
                         images.map((image, idx) => (
                             <picture key={idx} className='block w-[174px] h-[36px] relative object-contain'>
-                                <Image
-                                    src={image}
-                                    fill
-                                    alt={`image`}
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                    className='w-full h-full object-contain'
-                                />
+                                <Link href={'#'}>
+                                    <Image
+                                        src={image}
+                                        fill
+                                        alt={`image`}
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        className='w-full h-full object-contain'
+                                    />
+                                </Link>
                             </picture>
                         ))
                     }

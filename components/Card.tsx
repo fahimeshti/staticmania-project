@@ -1,10 +1,10 @@
 import Image, { StaticImageData } from 'next/image';
 import React from 'react'
 
-const Card = ({ image }: { image: StaticImageData }): JSX.Element => {
+const Card = ({ image, title }: { image: StaticImageData, title: string }): JSX.Element => {
     return (
         <div className='w-[416px]'>
-            <picture className='relative block w-full h-[256px] object-contain'>
+            <picture className='relative block w-full min-h-[230px] object-contain'>
                 <div className='w-10 h-10 absolute top-4 right-4 z-10'>
                     <Image
                         src='/assets/episodes/microp.svg'
@@ -25,7 +25,7 @@ const Card = ({ image }: { image: StaticImageData }): JSX.Element => {
 
             <div className='space-y-3 mt-4'>
                 <h3 className='text-2xl font-semibold'>
-                    Ep 1: How to build a world-class business brand
+                    {title}
                 </h3>
                 <p className='text-base'>
                     Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.

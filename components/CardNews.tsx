@@ -10,7 +10,7 @@ type MyType = {
 
 const CardNews = ({ image, title, text }: MyType): JSX.Element => {
     return (
-        <div className='max-w-[416px] h-full flex flex-col items-center justify-between'>
+        <div className='col-span-1 h-full flex flex-col items-center justify-between'>
             <picture className='relative block w-full h-[320px]'>
                 <Image
                     src={image}
